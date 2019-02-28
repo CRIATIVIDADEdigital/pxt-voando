@@ -1,35 +1,35 @@
 let ticks = 0
-let emptyObstacleY = 0
-let bird: game.LedSprite = null
-let obstacles: game.LedSprite[] = []
-let index = 0
+let vazioObstaculoY = 0
+let passarinho: game.LedSprite = null
+let obstaculo: game.LedSprite[] = []
+let indice = 0
 input.onButtonPressed(Button.A, function () {
-    bird.change(LedSpriteProperty.Y, -1)
+    passarinho.change(LedSpriteProperty.Y, -1)
 })
 input.onButtonPressed(Button.B, function () {
-    bird.change(LedSpriteProperty.Y, 1)
+    passarinho.change(LedSpriteProperty.Y, 1)
 })
-index = 0
-obstacles = []
-bird = game.createSprite(0, 2)
-bird.set(LedSpriteProperty.Blink, 300)
+indice = 0
+obstaculo = []
+passarinho = game.createSprite(0, 2)
+passarinho.set(LedSpriteProperty.Blink, 300)
 basic.forever(function () {
-    while (obstacles.length > 0 && obstacles[0].get(LedSpriteProperty.X) == 0) {
-        obstacles.removeAt(0).delete()
+    while (obstaculo.length > 0 && obstaculo[0].get(LedSpriteProperty.X) == 0) {
+        obstaculo.removeAt(0).delete()
     }
-    for (let obstacle2 of obstacles) {
-        obstacle2.change(LedSpriteProperty.X, -1)
+    for (let obstaculo2 of obstaculo) {
+        obstaculo2.change(LedSpriteProperty.X, -1)
     }
     if (ticks % 3 == 0) {
-        emptyObstacleY = Math.randomRange(0, 4)
-        for (let index2 = 0; index2 <= 4; index2++) {
-            if (index2 != emptyObstacleY) {
-                obstacles.push(game.createSprite(4, index2))
+        vazioObstaculoY = Math.randomRange(0, 4)
+        for (let indice2 = 0; indice2 <= 4; indice2++) {
+            if (indice2 != vazioObstaculoY) {
+                obstaculo.push(game.createSprite(4, indice2))
             }
         }
     }
-    for (let obstacle3 of obstacles) {
-        if (obstacle3.get(LedSpriteProperty.X) == bird.get(LedSpriteProperty.X) && obstacle3.get(LedSpriteProperty.Y) == bird.get(LedSpriteProperty.Y)) {
+    for (let obstaculo3 of obstaculo) {
+        if (obstaculo3.get(LedSpriteProperty.X) == passarinho.get(LedSpriteProperty.X) && obstaculo3.get(LedSpriteProperty.Y) == passarinho.get(LedSpriteProperty.Y)) {
             game.gameOver()
         }
     }
