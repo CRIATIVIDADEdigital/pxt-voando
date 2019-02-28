@@ -1,7 +1,7 @@
 let ticks = 0
 let emptyObstacleY = 0
-let obstacles: game.LedSprite[] = []
 let bird: game.LedSprite = null
+let obstacles: game.LedSprite[] = []
 let index = 0
 input.onButtonPressed(Button.A, function () {
     bird.change(LedSpriteProperty.Y, -1)
