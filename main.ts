@@ -1,8 +1,10 @@
 let ticks = 0
+let pausaVelocidade = 1000
 let vazioObstaculoY = 0
 let passarinho: game.LedSprite = null
 let obstaculo: game.LedSprite[] = []
 let indice = 0
+
 input.onButtonPressed(Button.A, function () {
     passarinho.change(LedSpriteProperty.Y, -1)
 })
@@ -34,5 +36,6 @@ basic.forever(function () {
         }
     }
     ticks += 1
-    basic.pause(1000)
+    basic.pause(pausaVelocidade)
+    pausaVelocidade -= 5
 })
