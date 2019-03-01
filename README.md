@@ -11,7 +11,7 @@ Comandos:
 Conteúdo da introdução
 
 ## Passo 1 @fullscreen
-Passo um
+Passo um ``||basic:show leds||``
 
 ## Passo 2 @fullscreen
 Passo dois 
