@@ -1,67 +1,78 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <variables>
-    <variable type="" id="V_D_:gZ1/v#t^I8wtITQ">passarinho</variable>
-    <variable type="" id=":{DB2P*U/Hvat/dBt+UN">obstaculo</variable>
-    <variable type="" id="Nm}Ao)VS,~@.-rd$O((l">obstaculo2</variable>
-    <variable type="" id="}1jOwjH2R8]v{9yWUp/Y">ticks</variable>
-    <variable type="" id="uXiGl-AOzNF/*NN]z|yO">vazioObstaculoY</variable>
-    <variable type="" id="}yy1[0?dHAkfCj#=iZ;R">indice2</variable>
-    <variable type="" id="HPSVaf9U.gbbNVlb_$Q*">obstaculo3</variable>
-    <variable type="" id="y!d**7_;nsE^IKAtxkWo">indice</variable>
+    <variable type="" id="9)NOd_7zs,98l5#SA]%v">passarinho</variable>
+    <variable type="" id="K$k,b]SW:]PvPlIQVSk+">obstaculo</variable>
+    <variable type="" id="V{TI]rJp@(EKLHlc-[?l">obstaculo2</variable>
+    <variable type="" id="CI,Gbnu1k(1FzKLR6Ew8">ticks</variable>
+    <variable type="" id="JD-[@1$N6#.DKKMu]9LL">vazioObstaculoY</variable>
+    <variable type="" id="}xxRZP`nQocFq%8ep9I@">indice2</variable>
+    <variable type="" id="Kd{Y`B1W6%92UYg!%O*F">obstaculo3</variable>
+    <variable type="" id="34{_NN;vcCibMkX8Z..E">pausaVelocidade</variable>
+    <variable type="" id="Q3zp=OAi`$^qM,Jh2$DI">indice</variable>
   </variables>
-  <block type="pxt-on-start" x="0" y="0">
+  <block type="pxt-on-start" x="20" y="20">
     <statement name="HANDLER">
       <block type="variables_set">
-        <field name="VAR" id="y!d**7_;nsE^IKAtxkWo" variabletype="">indice</field>
+        <field name="VAR" id="34{_NN;vcCibMkX8Z..E" variabletype="">pausaVelocidade</field>
         <value name="VALUE">
           <shadow type="math_number">
-            <field name="NUM">0</field>
+            <field name="NUM">1000</field>
           </shadow>
         </value>
         <next>
           <block type="variables_set">
-            <field name="VAR" id=":{DB2P*U/Hvat/dBt+UN" variabletype="">obstaculo</field>
+            <field name="VAR" id="Q3zp=OAi`$^qM,Jh2$DI" variabletype="">indice</field>
             <value name="VALUE">
               <shadow type="math_number">
                 <field name="NUM">0</field>
               </shadow>
-              <block type="lists_create_with">
-                <mutation items="0"></mutation>
-              </block>
             </value>
             <next>
               <block type="variables_set">
-                <field name="VAR" id="V_D_:gZ1/v#t^I8wtITQ" variabletype="">passarinho</field>
+                <field name="VAR" id="K$k,b]SW:]PvPlIQVSk+" variabletype="">obstaculo</field>
                 <value name="VALUE">
                   <shadow type="math_number">
                     <field name="NUM">0</field>
                   </shadow>
-                  <block type="game_create_sprite">
-                    <value name="x">
-                      <shadow type="math_number">
-                        <field name="NUM">0</field>
-                      </shadow>
-                    </value>
-                    <value name="y">
-                      <shadow type="math_number">
-                        <field name="NUM">2</field>
-                      </shadow>
-                    </value>
+                  <block type="lists_create_with">
+                    <mutation items="0"></mutation>
                   </block>
                 </value>
                 <next>
-                  <block type="game_sprite_set_property">
-                    <field name="property">LedSpriteProperty.Blink</field>
-                    <value name="sprite">
-                      <block type="variables_get">
-                        <field name="VAR" id="V_D_:gZ1/v#t^I8wtITQ" variabletype="">passarinho</field>
+                  <block type="variables_set">
+                    <field name="VAR" id="9)NOd_7zs,98l5#SA]%v" variabletype="">passarinho</field>
+                    <value name="VALUE">
+                      <shadow type="math_number">
+                        <field name="NUM">0</field>
+                      </shadow>
+                      <block type="game_create_sprite">
+                        <value name="x">
+                          <shadow type="math_number">
+                            <field name="NUM">0</field>
+                          </shadow>
+                        </value>
+                        <value name="y">
+                          <shadow type="math_number">
+                            <field name="NUM">2</field>
+                          </shadow>
+                        </value>
                       </block>
                     </value>
-                    <value name="value">
-                      <shadow type="math_number">
-                        <field name="NUM">300</field>
-                      </shadow>
-                    </value>
+                    <next>
+                      <block type="game_sprite_set_property">
+                        <field name="property">LedSpriteProperty.Blink</field>
+                        <value name="sprite">
+                          <block type="variables_get">
+                            <field name="VAR" id="9)NOd_7zs,98l5#SA]%v" variabletype="">passarinho</field>
+                          </block>
+                        </value>
+                        <value name="value">
+                          <shadow type="math_number">
+                            <field name="NUM">300</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
@@ -71,14 +82,14 @@
       </block>
     </statement>
   </block>
-  <block type="device_button_event" x="570" y="0">
+  <block type="device_button_event" x="643" y="20">
     <field name="NAME">Button.A</field>
     <statement name="HANDLER">
       <block type="game_sprite_change_xy">
         <field name="property">LedSpriteProperty.Y</field>
         <value name="sprite">
           <block type="variables_get">
-            <field name="VAR" id="V_D_:gZ1/v#t^I8wtITQ" variabletype="">passarinho</field>
+            <field name="VAR" id="9)NOd_7zs,98l5#SA]%v" variabletype="">passarinho</field>
           </block>
         </value>
         <value name="value">
@@ -89,14 +100,14 @@
       </block>
     </statement>
   </block>
-  <block type="device_button_event" x="572" y="145">
+  <block type="device_button_event" x="645" y="169">
     <field name="NAME">Button.B</field>
     <statement name="HANDLER">
       <block type="game_sprite_change_xy">
         <field name="property">LedSpriteProperty.Y</field>
         <value name="sprite">
           <block type="variables_get">
-            <field name="VAR" id="V_D_:gZ1/v#t^I8wtITQ" variabletype="">passarinho</field>
+            <field name="VAR" id="9)NOd_7zs,98l5#SA]%v" variabletype="">passarinho</field>
           </block>
         </value>
         <value name="value">
@@ -107,7 +118,7 @@
       </block>
     </statement>
   </block>
-  <block type="device_forever" x="1" y="289">
+  <block type="device_forever" x="20" y="368">
     <statement name="HANDLER">
       <block type="device_while">
         <value name="COND">
@@ -129,7 +140,7 @@
                   <block type="lists_length">
                     <value name="VALUE">
                       <block type="variables_get">
-                        <field name="VAR" id=":{DB2P*U/Hvat/dBt+UN" variabletype="">obstaculo</field>
+                        <field name="VAR" id="K$k,b]SW:]PvPlIQVSk+" variabletype="">obstaculo</field>
                       </block>
                     </value>
                   </block>
@@ -157,7 +168,7 @@
                       <block type="lists_index_get">
                         <value name="LIST">
                           <block type="variables_get">
-                            <field name="VAR" id=":{DB2P*U/Hvat/dBt+UN" variabletype="">obstaculo</field>
+                            <field name="VAR" id="K$k,b]SW:]PvPlIQVSk+" variabletype="">obstaculo</field>
                           </block>
                         </value>
                         <value name="INDEX">
@@ -184,7 +195,7 @@
               <block type="array_removeat">
                 <value name="list">
                   <block type="variables_get">
-                    <field name="VAR" id=":{DB2P*U/Hvat/dBt+UN" variabletype="">obstaculo</field>
+                    <field name="VAR" id="K$k,b]SW:]PvPlIQVSk+" variabletype="">obstaculo</field>
                   </block>
                 </value>
                 <value name="index">
@@ -198,10 +209,10 @@
         </statement>
         <next>
           <block type="controls_for_of">
-            <field name="VAR" id="Nm}Ao)VS,~@.-rd$O((l" variabletype="">obstaculo2</field>
+            <field name="VAR" id="V{TI]rJp@(EKLHlc-[?l" variabletype="">obstaculo2</field>
             <value name="LIST">
               <block type="variables_get">
-                <field name="VAR" id=":{DB2P*U/Hvat/dBt+UN" variabletype="">obstaculo</field>
+                <field name="VAR" id="K$k,b]SW:]PvPlIQVSk+" variabletype="">obstaculo</field>
               </block>
             </value>
             <statement name="DO">
@@ -209,7 +220,7 @@
                 <field name="property">LedSpriteProperty.X</field>
                 <value name="sprite">
                   <block type="variables_get">
-                    <field name="VAR" id="Nm}Ao)VS,~@.-rd$O((l" variabletype="">obstaculo2</field>
+                    <field name="VAR" id="V{TI]rJp@(EKLHlc-[?l" variabletype="">obstaculo2</field>
                   </block>
                 </value>
                 <value name="value">
@@ -237,7 +248,7 @@
                             <field name="NUM">0</field>
                           </shadow>
                           <block type="variables_get">
-                            <field name="VAR" id="}1jOwjH2R8]v{9yWUp/Y" variabletype="">ticks</field>
+                            <field name="VAR" id="CI,Gbnu1k(1FzKLR6Ew8" variabletype="">ticks</field>
                           </block>
                         </value>
                         <value name="DIVISOR">
@@ -256,7 +267,7 @@
                 </value>
                 <statement name="DO0">
                   <block type="variables_set">
-                    <field name="VAR" id="uXiGl-AOzNF/*NN]z|yO" variabletype="">vazioObstaculoY</field>
+                    <field name="VAR" id="JD-[@1$N6#.DKKMu]9LL" variabletype="">vazioObstaculoY</field>
                     <value name="VALUE">
                       <shadow type="math_number">
                         <field name="NUM">0</field>
@@ -278,7 +289,7 @@
                       <block type="pxt_controls_for">
                         <value name="VAR">
                           <shadow type="variables_get_reporter">
-                            <field name="VAR" id="}yy1[0?dHAkfCj#=iZ;R" variabletype="">indice2</field>
+                            <field name="VAR" id="}xxRZP`nQocFq%8ep9I@" variabletype="">indice2</field>
                           </shadow>
                         </value>
                         <value name="TO">
@@ -299,7 +310,7 @@
                                     <field name="NUM">0</field>
                                   </shadow>
                                   <block type="variables_get">
-                                    <field name="VAR" id="}yy1[0?dHAkfCj#=iZ;R" variabletype="">indice2</field>
+                                    <field name="VAR" id="}xxRZP`nQocFq%8ep9I@" variabletype="">indice2</field>
                                   </block>
                                 </value>
                                 <value name="B">
@@ -307,7 +318,7 @@
                                     <field name="NUM">0</field>
                                   </shadow>
                                   <block type="variables_get">
-                                    <field name="VAR" id="uXiGl-AOzNF/*NN]z|yO" variabletype="">vazioObstaculoY</field>
+                                    <field name="VAR" id="JD-[@1$N6#.DKKMu]9LL" variabletype="">vazioObstaculoY</field>
                                   </block>
                                 </value>
                               </block>
@@ -316,7 +327,7 @@
                               <block type="array_push">
                                 <value name="list">
                                   <block type="variables_get">
-                                    <field name="VAR" id=":{DB2P*U/Hvat/dBt+UN" variabletype="">obstaculo</field>
+                                    <field name="VAR" id="K$k,b]SW:]PvPlIQVSk+" variabletype="">obstaculo</field>
                                   </block>
                                 </value>
                                 <value name="value">
@@ -328,7 +339,7 @@
                                     </value>
                                     <value name="y">
                                       <block type="variables_get">
-                                        <field name="VAR" id="}yy1[0?dHAkfCj#=iZ;R" variabletype="">indice2</field>
+                                        <field name="VAR" id="}xxRZP`nQocFq%8ep9I@" variabletype="">indice2</field>
                                       </block>
                                     </value>
                                   </block>
@@ -343,10 +354,10 @@
                 </statement>
                 <next>
                   <block type="controls_for_of">
-                    <field name="VAR" id="HPSVaf9U.gbbNVlb_$Q*" variabletype="">obstaculo3</field>
+                    <field name="VAR" id="Kd{Y`B1W6%92UYg!%O*F" variabletype="">obstaculo3</field>
                     <value name="LIST">
                       <block type="variables_get">
-                        <field name="VAR" id=":{DB2P*U/Hvat/dBt+UN" variabletype="">obstaculo</field>
+                        <field name="VAR" id="K$k,b]SW:]PvPlIQVSk+" variabletype="">obstaculo</field>
                       </block>
                     </value>
                     <statement name="DO">
@@ -371,7 +382,7 @@
                                     <field name="property">LedSpriteProperty.X</field>
                                     <value name="sprite">
                                       <block type="variables_get">
-                                        <field name="VAR" id="HPSVaf9U.gbbNVlb_$Q*" variabletype="">obstaculo3</field>
+                                        <field name="VAR" id="Kd{Y`B1W6%92UYg!%O*F" variabletype="">obstaculo3</field>
                                       </block>
                                     </value>
                                   </block>
@@ -384,7 +395,7 @@
                                     <field name="property">LedSpriteProperty.X</field>
                                     <value name="sprite">
                                       <block type="variables_get">
-                                        <field name="VAR" id="V_D_:gZ1/v#t^I8wtITQ" variabletype="">passarinho</field>
+                                        <field name="VAR" id="9)NOd_7zs,98l5#SA]%v" variabletype="">passarinho</field>
                                       </block>
                                     </value>
                                   </block>
@@ -405,7 +416,7 @@
                                     <field name="property">LedSpriteProperty.Y</field>
                                     <value name="sprite">
                                       <block type="variables_get">
-                                        <field name="VAR" id="HPSVaf9U.gbbNVlb_$Q*" variabletype="">obstaculo3</field>
+                                        <field name="VAR" id="Kd{Y`B1W6%92UYg!%O*F" variabletype="">obstaculo3</field>
                                       </block>
                                     </value>
                                   </block>
@@ -418,7 +429,7 @@
                                     <field name="property">LedSpriteProperty.Y</field>
                                     <value name="sprite">
                                       <block type="variables_get">
-                                        <field name="VAR" id="V_D_:gZ1/v#t^I8wtITQ" variabletype="">passarinho</field>
+                                        <field name="VAR" id="9)NOd_7zs,98l5#SA]%v" variabletype="">passarinho</field>
                                       </block>
                                     </value>
                                   </block>
@@ -434,7 +445,7 @@
                     </statement>
                     <next>
                       <block type="variables_change">
-                        <field name="VAR" id="}1jOwjH2R8]v{9yWUp/Y" variabletype="">ticks</field>
+                        <field name="VAR" id="CI,Gbnu1k(1FzKLR6Ew8" variabletype="">ticks</field>
                         <value name="VALUE">
                           <shadow type="math_number">
                             <field name="NUM">1</field>
@@ -443,10 +454,34 @@
                         <next>
                           <block type="device_pause">
                             <value name="pause">
-                              <shadow type="timePicker">
-                                <field name="ms">1000</field>
-                              </shadow>
+                              <shadow type="timePicker"></shadow>
+                              <block type="variables_get">
+                                <field name="VAR" id="34{_NN;vcCibMkX8Z..E" variabletype="">pausaVelocidade</field>
+                              </block>
                             </value>
+                            <next>
+                              <block type="variables_change">
+                                <field name="VAR" id="34{_NN;vcCibMkX8Z..E" variabletype="">pausaVelocidade</field>
+                                <value name="VALUE">
+                                  <shadow type="math_number">
+                                    <field name="NUM">0</field>
+                                  </shadow>
+                                  <block type="math_arithmetic">
+                                    <field name="OP">MINUS</field>
+                                    <value name="A">
+                                      <shadow type="math_number">
+                                        <field name="NUM">0</field>
+                                      </shadow>
+                                    </value>
+                                    <value name="B">
+                                      <shadow type="math_number">
+                                        <field name="NUM">5</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
                           </block>
                         </next>
                       </block>
