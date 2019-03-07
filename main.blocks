@@ -1,17 +1,8 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <variables>
-    <variable type="" id="w.Lkj$]H_AN+WOwki/r@">passarinho</variable>
-    <variable type="" id="^v`J?v*R~8m([1_HS4*T">obstaculo</variable>
-    <variable type="" id="5?$-=/#iQ50vl_Latl.x">obstaculo2</variable>
-    <variable type="" id="7W28[~?K,*bEOpqx:l}{">ticks</variable>
-    <variable type="" id="F8j-,71`tTaZ)u{Z7TY`">vazioObstaculoY</variable>
-    <variable type="" id="z[J?0L4!pK!8;x.TuN@_">indice2</variable>
-    <variable type="" id="U:#-Y/$cN{7q%Dm}_[v7">obstaculo3</variable>
-    <variable type="" id=";Q;=3;v[:exXGQJ=sQ2-">pausaVelocidade</variable>
-    <variable type="" id="2FB$h.=GJA3]-vL7$O3g">indice</variable>
     <variable type="" id="E3UvoR1#%4mEfQ]zdEx9">valorDaPausa</variable>
   </variables>
-  <block type="pxt-on-start" x="1" y="-108">
+  <block type="pxt-on-start" x="0" y="0">
     <statement name="HANDLER">
       <block type="Jogo_CriarPassarinho">
         <next>
@@ -31,7 +22,7 @@
       </block>
     </statement>
   </block>
-  <block type="device_forever" x="3" y="131">
+  <block type="device_forever" x="3" y="254">
     <statement name="HANDLER">
       <block type="Jogo_MoverObstaculos">
         <next>
@@ -62,13 +53,13 @@
       </block>
     </statement>
   </block>
-  <block type="device_button_event" x="333" y="133">
+  <block type="device_button_event" x="338" y="250">
     <field name="NAME">Button.A</field>
     <statement name="HANDLER">
       <block type="Jogo_PassarinhoSubir"></block>
     </statement>
   </block>
-  <block type="device_button_event" x="339" y="274">
+  <block type="device_button_event" x="338" y="433">
     <field name="NAME">Button.B</field>
     <statement name="HANDLER">
       <block type="Jogo_PassarinhoDescer"></block>
