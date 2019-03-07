@@ -52,7 +52,7 @@ Para tanto, vamos subtrair o valor desta variávelo logo após a execução da p
 Vamos subtrair 10 milissegundos a cada movimentação dos obstáculos. 
 A alteração consiste em mudar de ``||variable:alterar valorDaPausa por 0||`` para ``||variable:alterar valorDaPausa por -10||``. 
 Confira como isso ficou no código alterado abaixo.
-
+![Imagem com o programa na forma de blocos](https://raw.githubusercontent.com/CRIATIVIDADEdigital/pxt-voando/a9200b21b0bd0340269fe3c6d7084c3a2879a1ec/img/velocidade_automatico.png)
 Após a alteração veja como ficou o jogo usando o simulador ou baixando a nova versão do código no seu Micro:bit.
 
 ## Créditos
