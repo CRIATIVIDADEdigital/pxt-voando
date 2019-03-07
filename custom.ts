@@ -7,6 +7,7 @@ namespace Jogo {
     let obstaculo: game.LedSprite[] = [];
     let ticks = 0;
     let vazioObstaculoY = 0;
+    let indice = 0;
     /**
     * Criar o passarinho usado no jogo
     */
@@ -42,7 +43,7 @@ namespace Jogo {
     */
     //% block 
     export function GerarObstaculos(): void {
-        indice = 0;
+       indice = 0;
     }
 
     /**

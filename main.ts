@@ -1,19 +1,16 @@
+let pausaVelocidade = 0
 let ticks = 0
 let vazioObstaculoY = 0
 let obstaculo: game.LedSprite[] = []
 let passarinho: game.LedSprite = null
-let pausaVelocidade = 0
-let indice = 0
 input.onButtonPressed(Button.A, function () {
-    passarinho.change(LedSpriteProperty.Y, -1)
+	
 })
 input.onButtonPressed(Button.B, function () {
     passarinho.change(LedSpriteProperty.Y, 1)
 })
-indice = 0
-pausaVelocidade = 1000
-passarinho = game.createSprite(0, 2)
-passarinho.set(LedSpriteProperty.Blink, 200)
+Jogo.CriarPassarinho()
+Jogo.GerarObstaculos()
 basic.forever(function () {
     while (obstaculo.length > 0 && obstaculo[0].get(LedSpriteProperty.X) == 0) {
         obstaculo.removeAt(0).delete()

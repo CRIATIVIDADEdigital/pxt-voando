@@ -12,80 +12,15 @@
   </variables>
   <block type="pxt-on-start" x="0" y="0">
     <statement name="HANDLER">
-      <block type="variables_set">
-        <field name="VAR" id="2FB$h.=GJA3]-vL7$O3g" variabletype="">indice</field>
-        <value name="VALUE">
-          <shadow type="math_number">
-            <field name="NUM">0</field>
-          </shadow>
-        </value>
+      <block type="Jogo_CriarPassarinho">
         <next>
-          <block type="variables_set">
-            <field name="VAR" id=";Q;=3;v[:exXGQJ=sQ2-" variabletype="">pausaVelocidade</field>
-            <value name="VALUE">
-              <shadow type="math_number">
-                <field name="NUM">1000</field>
-              </shadow>
-            </value>
-            <next>
-              <block type="variables_set">
-                <field name="VAR" id="w.Lkj$]H_AN+WOwki/r@" variabletype="">passarinho</field>
-                <value name="VALUE">
-                  <shadow type="math_number">
-                    <field name="NUM">0</field>
-                  </shadow>
-                  <block type="game_create_sprite">
-                    <value name="x">
-                      <shadow type="math_number">
-                        <field name="NUM">0</field>
-                      </shadow>
-                    </value>
-                    <value name="y">
-                      <shadow type="math_number">
-                        <field name="NUM">2</field>
-                      </shadow>
-                    </value>
-                  </block>
-                </value>
-                <next>
-                  <block type="game_sprite_set_property">
-                    <field name="property">LedSpriteProperty.Blink</field>
-                    <value name="sprite">
-                      <block type="variables_get">
-                        <field name="VAR" id="w.Lkj$]H_AN+WOwki/r@" variabletype="">passarinho</field>
-                      </block>
-                    </value>
-                    <value name="value">
-                      <shadow type="math_number">
-                        <field name="NUM">200</field>
-                      </shadow>
-                    </value>
-                  </block>
-                </next>
-              </block>
-            </next>
-          </block>
+          <block type="Jogo_GerarObstaculos"></block>
         </next>
       </block>
     </statement>
   </block>
-  <block type="device_button_event" x="623" y="0">
+  <block type="device_button_event" x="220" y="12">
     <field name="NAME">Button.A</field>
-    <statement name="HANDLER">
-      <block type="game_sprite_change_xy">
-        <field name="property">LedSpriteProperty.Y</field>
-        <value name="sprite">
-          <block type="variables_get">
-            <field name="VAR" id="w.Lkj$]H_AN+WOwki/r@" variabletype="">passarinho</field>
-          </block>
-        </value>
-        <value name="value">
-          <shadow type="math_number">
-            <field name="NUM">-1</field>
-          </shadow>
-        </value>
-      </block>
-    </statement>
   </block>
   <block type="device_button_event" x="1089" y="0">
     <field name="NAME">Button.B</field>
