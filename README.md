@@ -55,10 +55,7 @@ Confira como isso ficou no código alterado abaixo.
 
 ```blocks
 basic.forever(function () {
-    Jogo.MoverObstaculos()
-    if (Jogo.PassarinhoBateu()) {
-        game.gameOver();
-    }
+
 })
 ```
 
