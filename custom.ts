@@ -30,10 +30,17 @@ namespace Jogo {
         }
         return (false);
     }
-
+    /**
+    * Sobe o passarinho
+    */
+    //% block 
     export function PassarinhoSubir(): void {
         passarinho.change(LedSpriteProperty.Y, -1);
     }
+        /**
+    * Desce o passarinho
+    */
+    //% block 
     export function PassarinhoDescer(): void {
         passarinho.change(LedSpriteProperty.Y, 1);
     }
