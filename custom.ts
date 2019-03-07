@@ -72,6 +72,7 @@ namespace Jogo {
                 }
             }
         }
+        game.setScore(ticks);
         ticks += 1;
     }
 }
