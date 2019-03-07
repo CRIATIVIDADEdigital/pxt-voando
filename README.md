@@ -50,8 +50,8 @@ let valorDaPausa = 1000
 O próximo passo consiste em, a cada pausa do jogo, reduzirmos o valor da variável ``||variable:valorDaPausa||``. 
 Para tanto, vamos subtrair o valor desta variávelo logo após a execução da pausa. 
 Vamos subtrair 10 milissegundos a cada movimentação dos obstáculos. 
-A alteração consiste em mudar ``||variable:valorDaPausa += 0||``. 
-Confira como isso foi feito no código abaixo.
+A alteração consiste em mudar de ``||variable:alterar valorDaPausa por 0||`` para ``||variable:alterar valorDaPausa por -10||``. 
+Confira como isso ficou no código alterado abaixo.
 
 ```blocks
 basic.forever(function () {
@@ -60,9 +60,10 @@ basic.forever(function () {
         game.gameOver();
     }
     basic.pause(valorDaPausa);
-    valorDaPausa += 0;
+    valorDaPausa += -10;
 })
 ```
+
 ## Passo 2
 Passo dois 
 
