@@ -9,17 +9,29 @@
     <variable type="" id="U:#-Y/$cN{7q%Dm}_[v7">obstaculo3</variable>
     <variable type="" id=";Q;=3;v[:exXGQJ=sQ2-">pausaVelocidade</variable>
     <variable type="" id="2FB$h.=GJA3]-vL7$O3g">indice</variable>
+    <variable type="" id="E3UvoR1#%4mEfQ]zdEx9">valorDaPausa</variable>
   </variables>
-  <block type="pxt-on-start" x="1" y="5">
+  <block type="pxt-on-start" x="1" y="-108">
     <statement name="HANDLER">
       <block type="Jogo_CriarPassarinho">
         <next>
-          <block type="Jogo_GerarObstaculos"></block>
+          <block type="Jogo_GerarObstaculos">
+            <next>
+              <block type="variables_set">
+                <field name="VAR" id="E3UvoR1#%4mEfQ]zdEx9" variabletype="">valorDaPausa</field>
+                <value name="VALUE">
+                  <shadow type="math_number">
+                    <field name="NUM">1000</field>
+                  </shadow>
+                </value>
+              </block>
+            </next>
+          </block>
         </next>
       </block>
     </statement>
   </block>
-  <block type="device_forever" x="337" y="0">
+  <block type="device_forever" x="3" y="131">
     <statement name="HANDLER">
       <block type="Jogo_MoverObstaculos">
         <next>
@@ -36,9 +48,12 @@
             <next>
               <block type="device_pause">
                 <value name="pause">
-                  <shadow type="timePicker">
+                  <shadow type="timePicker" id="I;${3hUfYwzh+b]j[n.G">
                     <field name="ms">1000</field>
                   </shadow>
+                  <block type="variables_get">
+                    <field name="VAR" id="E3UvoR1#%4mEfQ]zdEx9" variabletype="">valorDaPausa</field>
+                  </block>
                 </value>
               </block>
             </next>
@@ -47,13 +62,13 @@
       </block>
     </statement>
   </block>
-  <block type="device_button_event" x="0" y="241">
+  <block type="device_button_event" x="333" y="133">
     <field name="NAME">Button.A</field>
     <statement name="HANDLER">
       <block type="Jogo_PassarinhoSubir"></block>
     </statement>
   </block>
-  <block type="device_button_event" x="1" y="387">
+  <block type="device_button_event" x="339" y="274">
     <field name="NAME">Button.B</field>
     <statement name="HANDLER">
       <block type="Jogo_PassarinhoDescer"></block>
