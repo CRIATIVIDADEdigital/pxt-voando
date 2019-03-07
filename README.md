@@ -59,8 +59,6 @@ basic.forever(function () {
     if (Jogo.PassarinhoBateu()) {
         game.gameOver();
     }
-    basic.pause(valorDaPausa);
-    valorDaPausa += -10;
 })
 ```
 
