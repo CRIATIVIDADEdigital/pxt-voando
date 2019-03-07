@@ -53,14 +53,7 @@ Vamos subtrair 10 milissegundos a cada movimentação dos obstáculos.
 A alteração consiste em mudar de ``||variable:alterar valorDaPausa por 0||`` para ``||variable:alterar valorDaPausa por -10||``. 
 Confira como isso ficou no código alterado abaixo.
 
-```blocks
-basic.forever(function () {
-
-})
-```
-
-## Passo 2
-Passo dois 
+Após a alteração veja como ficou o jogo usando o simulador ou baixando a nova versão do código no seu Micro:bit.
 
 ## Créditos
 Este jogo foi criado usando como base o código do [Crashy Bird](https://makecode.microbit.org/projects/crashy-bird)
