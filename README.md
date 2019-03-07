@@ -50,7 +50,7 @@ let valorDaPausa = 1000
 O próximo passo consiste em, a cada pausa do jogo, reduzirmos o valor da variável ``||variable:valorDaPausa||``. 
 Para tanto, vamos subtrair o valor desta variávelo logo após a execução da pausa. 
 Vamos subtrair 10 milissegundos a cada movimentação dos obstáculos. 
-A alteração consiste em mudar ``||basic:valorDaPausa += 0||``. 
+A alteração consiste em mudar ``||variable:valorDaPausa += 0||``. 
 Confira como isso foi feito no código abaixo.
 
 ```blocks

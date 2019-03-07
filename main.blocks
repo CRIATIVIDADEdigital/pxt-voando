@@ -2,7 +2,7 @@
   <variables>
     <variable type="" id="Dxu,l#VE87fpK)^.%L-.">valorDaPausa</variable>
   </variables>
-  <block type="pxt-on-start" x="20" y="20">
+  <block type="pxt-on-start" x="3" y="0">
     <statement name="HANDLER">
       <block type="Jogo_CriarPassarinho">
         <next>
@@ -22,7 +22,7 @@
       </block>
     </statement>
   </block>
-  <block type="device_forever" x="17" y="280">
+  <block type="device_forever" x="0" y="260">
     <statement name="HANDLER">
       <block type="Jogo_MoverObstaculos">
         <next>
@@ -61,13 +61,13 @@
       </block>
     </statement>
   </block>
-  <block type="device_button_event" x="367" y="272">
+  <block type="device_button_event" x="350" y="252">
     <field name="NAME">Button.A</field>
     <statement name="HANDLER">
       <block type="Jogo_PassarinhoSubir"></block>
     </statement>
   </block>
-  <block type="device_button_event" x="366" y="408">
+  <block type="device_button_event" x="349" y="388">
     <field name="NAME">Button.B</field>
     <statement name="HANDLER">
       <block type="Jogo_PassarinhoDescer"></block>
