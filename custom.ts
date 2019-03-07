@@ -30,13 +30,19 @@ namespace Jogo {
         return (false);
     }
 
+    export function PassarinhoSubir(): void {
+        passarinho.change(LedSpriteProperty.Y, -1);
+    }
+    export function PassarinhoDescer(): void {
+        passarinho.change(LedSpriteProperty.Y, 1);
+    }
+    
     /**
     * Prepara as paredes com os obstáculos
     */
     //% block 
     export function GerarObstaculos(): void {
         indice = 0;
-        pausaVelocidade = 1000;
     }
 
     /**
@@ -58,5 +64,6 @@ namespace Jogo {
                 }
             }
         }
+        ticks += 1;
     }
 }
