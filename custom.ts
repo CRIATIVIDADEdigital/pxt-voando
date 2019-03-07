@@ -1,7 +1,7 @@
 /**
  * Blocos criados especificamente para controlar o jogo do passarinho.
  */
-//% color=190 weight=100 icon="\uf4ba" block="Jogo do Passarinho"
+//% color=190 weight=100 icon="\uf072" block="Jogo do Passarinho"
 namespace Jogo {
     let passarinho: game.LedSprite = null; //Corresponde a somente um sprite
     let obstaculo: game.LedSprite[] = [];

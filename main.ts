@@ -1,13 +1,13 @@
-let passarinho: game.LedSprite = null
 input.onButtonPressed(Button.A, function () {
-	
+    Jogo.PassarinhoSubir()
 })
 input.onButtonPressed(Button.B, function () {
-    passarinho.change(LedSpriteProperty.Y, 1)
+    Jogo.PassarinhoDescer()
 })
 Jogo.CriarPassarinho()
 Jogo.GerarObstaculos()
 basic.forever(function () {
+    Jogo.MoverObstaculos()
     if (Jogo.PassarinhoBateu()) {
         game.gameOver()
     }

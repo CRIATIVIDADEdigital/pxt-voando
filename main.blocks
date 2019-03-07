@@ -10,7 +10,7 @@
     <variable type="" id=";Q;=3;v[:exXGQJ=sQ2-">pausaVelocidade</variable>
     <variable type="" id="2FB$h.=GJA3]-vL7$O3g">indice</variable>
   </variables>
-  <block type="pxt-on-start" x="-3" y="-172">
+  <block type="pxt-on-start" x="0" y="5">
     <statement name="HANDLER">
       <block type="Jogo_CriarPassarinho">
         <next>
@@ -19,49 +19,44 @@
       </block>
     </statement>
   </block>
-  <block type="device_forever" x="333" y="-177">
+  <block type="device_forever" x="336" y="0">
     <statement name="HANDLER">
-      <block type="controls_if">
-        <value name="IF0">
-          <shadow type="logic_boolean" id="[k6E+}znKKc6@kP2U!R3">
-            <field name="BOOL">TRUE</field>
-          </shadow>
-          <block type="Jogo_PassarinhoBateu"></block>
-        </value>
-        <statement name="DO0">
-          <block type="game_game_over"></block>
-        </statement>
+      <block type="Jogo_MoverObstaculos">
         <next>
-          <block type="device_pause">
-            <value name="pause">
-              <shadow type="timePicker">
-                <field name="ms">1000</field>
+          <block type="controls_if">
+            <value name="IF0">
+              <shadow type="logic_boolean" id="[k6E+}znKKc6@kP2U!R3">
+                <field name="BOOL">TRUE</field>
               </shadow>
+              <block type="Jogo_PassarinhoBateu"></block>
             </value>
+            <statement name="DO0">
+              <block type="game_game_over"></block>
+            </statement>
+            <next>
+              <block type="device_pause">
+                <value name="pause">
+                  <shadow type="timePicker">
+                    <field name="ms">1000</field>
+                  </shadow>
+                </value>
+              </block>
+            </next>
           </block>
         </next>
       </block>
     </statement>
   </block>
-  <block type="device_button_event" x="18" y="30">
+  <block type="device_button_event" x="21" y="207">
     <field name="NAME">Button.A</field>
+    <statement name="HANDLER">
+      <block type="Jogo_PassarinhoSubir"></block>
+    </statement>
   </block>
-  <block type="device_button_event" x="68" y="164">
+  <block type="device_button_event" x="20" y="351">
     <field name="NAME">Button.B</field>
     <statement name="HANDLER">
-      <block type="game_sprite_change_xy">
-        <field name="property">LedSpriteProperty.Y</field>
-        <value name="sprite">
-          <block type="variables_get">
-            <field name="VAR" id="w.Lkj$]H_AN+WOwki/r@" variabletype="">passarinho</field>
-          </block>
-        </value>
-        <value name="value">
-          <shadow type="math_number">
-            <field name="NUM">1</field>
-          </shadow>
-        </value>
-      </block>
+      <block type="Jogo_PassarinhoDescer"></block>
     </statement>
   </block>
 </xml>
