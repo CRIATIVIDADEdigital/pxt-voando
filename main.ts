@@ -14,5 +14,5 @@ basic.forever(function () {
         game.gameOver()
     }
     basic.pause(valorDaPausa)
-    valorDaPausa += -10
+    valorDaPausa += 0
 })
