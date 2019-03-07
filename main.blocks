@@ -1,15 +1,15 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <variables>
-    <variable type="" id="E3UvoR1#%4mEfQ]zdEx9">valorDaPausa</variable>
+    <variable type="" id="Dxu,l#VE87fpK)^.%L-.">valorDaPausa</variable>
   </variables>
-  <block type="pxt-on-start" x="0" y="0">
+  <block type="pxt-on-start" x="20" y="20">
     <statement name="HANDLER">
       <block type="Jogo_CriarPassarinho">
         <next>
           <block type="Jogo_GerarObstaculos">
             <next>
               <block type="variables_set">
-                <field name="VAR" id="E3UvoR1#%4mEfQ]zdEx9" variabletype="">valorDaPausa</field>
+                <field name="VAR" id="Dxu,l#VE87fpK)^.%L-." variabletype="">valorDaPausa</field>
                 <value name="VALUE">
                   <shadow type="math_number">
                     <field name="NUM">1000</field>
@@ -22,13 +22,13 @@
       </block>
     </statement>
   </block>
-  <block type="device_forever" x="3" y="254">
+  <block type="device_forever" x="17" y="280">
     <statement name="HANDLER">
       <block type="Jogo_MoverObstaculos">
         <next>
           <block type="controls_if">
             <value name="IF0">
-              <shadow type="logic_boolean" id="[k6E+}znKKc6@kP2U!R3">
+              <shadow type="logic_boolean">
                 <field name="BOOL">TRUE</field>
               </shadow>
               <block type="Jogo_PassarinhoBateu"></block>
@@ -39,13 +39,21 @@
             <next>
               <block type="device_pause">
                 <value name="pause">
-                  <shadow type="timePicker" id="I;${3hUfYwzh+b]j[n.G">
-                    <field name="ms">1000</field>
-                  </shadow>
+                  <shadow type="timePicker"></shadow>
                   <block type="variables_get">
-                    <field name="VAR" id="E3UvoR1#%4mEfQ]zdEx9" variabletype="">valorDaPausa</field>
+                    <field name="VAR" id="Dxu,l#VE87fpK)^.%L-." variabletype="">valorDaPausa</field>
                   </block>
                 </value>
+                <next>
+                  <block type="variables_change">
+                    <field name="VAR" id="Dxu,l#VE87fpK)^.%L-." variabletype="">valorDaPausa</field>
+                    <value name="VALUE">
+                      <shadow type="math_number">
+                        <field name="NUM">0</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </next>
               </block>
             </next>
           </block>
@@ -53,13 +61,13 @@
       </block>
     </statement>
   </block>
-  <block type="device_button_event" x="338" y="250">
+  <block type="device_button_event" x="367" y="272">
     <field name="NAME">Button.A</field>
     <statement name="HANDLER">
       <block type="Jogo_PassarinhoSubir"></block>
     </statement>
   </block>
-  <block type="device_button_event" x="338" y="433">
+  <block type="device_button_event" x="366" y="408">
     <field name="NAME">Button.B</field>
     <statement name="HANDLER">
       <block type="Jogo_PassarinhoDescer"></block>
