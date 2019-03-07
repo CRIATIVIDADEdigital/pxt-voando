@@ -19,7 +19,7 @@ Quer experimentar modificar a programação deste jogo? Então, confira as suges
 ### Controlando a velocidade do jogo
 A velocidade em que o obstáculo é movimentado é definida pelo valor da variável ``||variables:valorDaPausa||``  "passarinho" vocêPasso um ``||variables:definir valorDaPausa para 1000||``
 ```blocks
-valorDaPausa = 1000;
+variables.valorDaPausa(1000);
 basic.forever(function() {
     basic.showLeds(`
         . . . . .
