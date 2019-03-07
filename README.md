@@ -1,17 +1,24 @@
-# Jogo - VOANDO
+# Jogo do Passarinho
 Neste jogo para Micro:bit você deverá desviar dos obstáculos para que o pássaro continue voando.
-Comandos:
-| BOTÃO | COMANDO          |
-|-------|------------------|
-|   A   | Subir            |
-|   B   | Descer           |
-| A + B | Reiniciar o jogo |
 
 ## Introdução @unplugged
-Conteúdo da introdução
+Construímos este jogo inspirado no [Flappy Bird](https://pt.wikipedia.org/wiki/Flappy_Bird). 
+Para facilitar o entendimento da lógica de funcionamento do jogo, criamos blocos específicos para o seu controle. 
 
-## Passo 1 @fullscreen
-Passo um ``||basic:show leds||``
+
+
+## Comandos @fullscreen
+Para controlar o jogo estão disponíveis os seguintes comandos:
+
+**Botão A**: subir passarinho.<br />
+**Botão B**: descer passarinho.<br />
+**Botões A+B**: reiniciar o jogo.
+
+## Sugestões de modificação @fullscreen
+Quer experimentar modificar a programação deste jogo? Então, confira as sugestões apresentadas abaixo.
+
+## Controlando a velocidade do joogPasso 1 @fullscreen
+ "passarinho" vocêPasso um ``||basic:show leds||``
 
 ## Passo 2 @fullscreen
 Passo dois 
