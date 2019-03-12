@@ -1,5 +1,5 @@
 # Jogo do Passarinho
-Neste jogo para **Micro:bit** você deverá desviar dos obstáculos para que o "pássaro" continue voando.
+Neste jogo para **Micro:bit** você deverá desviar dos obstáculos para que o "passarinho" continue voando.
 
 ## Introdução
 Construímos este jogo inspirado no [Flappy Bird](https://pt.wikipedia.org/wiki/Flappy_Bird). 
@@ -17,7 +17,7 @@ Para facilitar o entendimento da lógica de funcionamento do jogo, criamos bloco
 Quer experimentar modificar a programação deste jogo? Então, confira as sugestões apresentadas abaixo.
 
 ### Alterando a velocidade do jogo
-A velocidade em que o obstáculo é movimentado é definida pelo valor da variável ``||variables:valorDaPausa||`` que você encontra dentro do bloco ``||basic:no iniciar||`` 
+A velocidade de movimentação do obstáculo é definida pelo valor da variável ``||variables:valorDaPausa||`` que você encontra dentro do bloco ``||basic:no iniciar||`` 
 
 ```blocks
 let valorDaPausa = 1000
@@ -38,7 +38,10 @@ Isso acontece porque esta a variável define o tempo de ``||basic.pausa||`` que 
 
 ### Alteração automática da velocidade do jogo
 Agora que você já experimentou aumentar a velocidade do jogo que tal fazer com que isso aconteça automaticamente?
-Ou seja, que tal alterar o programa para fazer o jogo aumentar de velocidade a medida que o jogador conseguir manter o seu "passarinho" desviando dos obstáculos?
+
+Vamos alterar a programação do jogo para fazê-lo parecer mais um com um *game*. 
+Ou seja, o jogo vai aumentar de velocidade a medida que o jogador conseguir manter o seu "passarinho" desviando dos obstáculos.:grin:
+
 Novamente, para o controle de velocidades vamos utilizar a variável ``||variable:valorDaPausa||``.
 
 Primeiro vamos alterar o código para que a variável ``||variable:valorDaPausa||`` volte a representar uma pausa de 1 segundo.
