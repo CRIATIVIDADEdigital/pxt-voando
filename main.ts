@@ -6,7 +6,7 @@ input.onButtonPressed(Button.B, function () {
     Jogo.PassarinhoDescer()
 })
 Jogo.CriarPassarinho()
-Jogo.GerarObstaculos()
+Jogo.PrepararObstaculos()
 valorDaPausa = 1000
 basic.forever(function () {
     Jogo.MoverObstaculos()

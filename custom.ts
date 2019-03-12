@@ -49,7 +49,7 @@ namespace Jogo {
     * Prepara as paredes com os obstáculos
     */
     //% block 
-    export function GerarObstaculos(): void {
+    export function PrepararObstaculos(): void {
        indice = 0;
     }
 
