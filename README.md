@@ -54,11 +54,12 @@ O próximo passo consiste em, a cada pausa do jogo, reduzirmos o valor da variá
 Para tanto, vamos subtrair o valor desta variável logo após a execução de cada pausa. 
 Sugerimos que você experimente subtrair 10 milissegundos a cada pausa. 
 
-A alteração consiste em mudar de ``||variable:alterar valorDaPausa por 0||`` para ``||variable:alterar valorDaPausa por -10||``. 
-Confira como isso ficou no código alterado abaixo.
+A alteração consiste em mudar de ``||variable:alterar valorDaPausa por 0||`` para ``||variable:alterar valorDaPausa por -10||``.
+
+Confira como isso ficou no código abaixo.
 ![Imagem com o programa na forma de blocos](https://raw.githubusercontent.com/CRIATIVIDADEdigital/pxt-voando/master/img/velocidade_automatico.png)
 
 Após a alteração veja como ficou o jogo usando o simulador ou baixando a nova versão do código no seu Micro:bit.
 
 ## Créditos
-Este jogo foi criado usando como base o código do [Crashy Bird](https://makecode.microbit.org/projects/crashy-bird)
+Esta atividade foi criado pelo [APRENDER.digital](https://aprender.digital) usando como base o código do [Crashy Bird](https://makecode.microbit.org/projects/crashy-bird).
