@@ -40,9 +40,9 @@ Isso acontece porque esta a variável define o tempo de ``||basic.pausa||`` que 
 Agora que você já experimentou aumentar a velocidade do jogo que tal fazer com que isso aconteça automaticamente?
 
 Vamos alterar a programação do jogo para fazê-lo parecer mais um com um *game*. 
-Ou seja, o jogo vai aumentar de velocidade a medida que o jogador conseguir manter o seu "passarinho" desviando dos obstáculos.:grin:
+Ou seja, o jogo vai aumentar de velocidade a medida que o jogador conseguir manter o seu "passarinho" desviando dos obstáculos.
 
-Novamente, para o controle de velocidades vamos utilizar a variável ``||variable:valorDaPausa||``.
+Novamente, para o controle da velocidade vamos utilizar a variável ``||variable:valorDaPausa||``.
 
 Primeiro vamos alterar o código para que a variável ``||variable:valorDaPausa||`` volte a representar uma pausa de 1 segundo.
 
@@ -51,8 +51,9 @@ let valorDaPausa = 1000
 ```
 
 O próximo passo consiste em, a cada pausa do jogo, reduzirmos o valor da variável ``||variable:valorDaPausa||``. 
-Para tanto, vamos subtrair o valor desta variávelo logo após a execução da pausa. 
-Vamos subtrair 10 milissegundos a cada movimentação dos obstáculos. 
+Para tanto, vamos subtrair o valor desta variável logo após a execução de cada pausa. 
+Sugerimos que você experimente subtrair 10 milissegundos a cada pausa. 
+
 A alteração consiste em mudar de ``||variable:alterar valorDaPausa por 0||`` para ``||variable:alterar valorDaPausa por -10||``. 
 Confira como isso ficou no código alterado abaixo.
 ![Imagem com o programa na forma de blocos](https://raw.githubusercontent.com/CRIATIVIDADEdigital/pxt-voando/master/img/velocidade_automatico.png)
