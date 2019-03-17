@@ -43,29 +43,29 @@ Diminuindo o valor da variável ``||variable:valorDaPausa||`` nós **aumentamos*
 Isso acontece porque esta a variável define o tempo de ``||basic.pausa||`` que o programa utiliza como base para movimentar os obstáculos.
 
 ### Alteração automática da velocidade do jogo
-Agora que você já experimentou aumentar a velocidade do jogo que tal fazer com que isso aconteça automaticamente?
+[Agora que você já experimentou aumentar a velocidade](https://youtu.be/AWvPZyU2w_M?t=10m24s) do jogo que tal fazer com que isso aconteça automaticamente?
 
 Vamos alterar a programação do jogo para fazê-lo parecer mais um com um *game*. 
 Ou seja, o jogo vai aumentar de velocidade a medida que o jogador conseguir manter o seu "passarinho" desviando dos obstáculos.
 
-Novamente, para o controle da velocidade vamos utilizar a variável ``||variable:valorDaPausa||``.
+[Novamente](https://youtu.be/AWvPZyU2w_M?t=10m49s), para o controle da velocidade vamos utilizar a variável ``||variable:valorDaPausa||``.
 
-Primeiro vamos alterar o código para que a variável ``||variable:valorDaPausa||`` volte a representar uma pausa de 1 segundo.
+[Primeiro](https://youtu.be/AWvPZyU2w_M?t=10m53s) vamos alterar o código para que a variável ``||variable:valorDaPausa||`` volte a representar uma pausa de 1 segundo.
 
 ```blocks
 let valorDaPausa = 1000
 ```
 
-O próximo passo consiste em, a cada pausa do jogo, reduzirmos o valor da variável ``||variable:valorDaPausa||``. 
+[O próximo passo](https://youtu.be/AWvPZyU2w_M?t=11m15s) consiste em, a cada pausa do jogo, reduzirmos o valor da variável ``||variable:valorDaPausa||``. 
 Para tanto, vamos subtrair o valor desta variável logo após a execução de cada pausa. 
 Sugerimos que você experimente subtrair 10 milissegundos a cada pausa. 
 
-A alteração consiste em mudar de ``||variable:alterar valorDaPausa por 0||`` para ``||variable:alterar valorDaPausa por -10||``.
+[A alteração consiste](https://youtu.be/AWvPZyU2w_M?t=11m30s) em mudar de ``||variable:alterar valorDaPausa por 0||`` para ``||variable:alterar valorDaPausa por -10||``.
 
 Confira como isso ficou no código abaixo.
 ![Imagem com o programa na forma de blocos](https://raw.githubusercontent.com/CRIATIVIDADEdigital/pxt-voando/master/img/velocidade_automatico.png)
 
-Após a alteração veja como ficou o jogo usando o simulador ou baixando a nova versão do código no seu Micro:bit.
+Após a alteração veja como ficou o jogo usando o simulador ou [baixando a nova versão](https://youtu.be/AWvPZyU2w_M?t=12m19s) do código no seu Micro:bit.
 
 ## Créditos
 Esta atividade foi criado pelo [APRENDER.digital](https://aprender.digital) usando como base o código do [Crashy Bird](https://makecode.microbit.org/projects/crashy-bird).
