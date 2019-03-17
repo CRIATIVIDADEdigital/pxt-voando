@@ -2,19 +2,25 @@
 Neste jogo para **Micro:bit** você deverá desviar dos obstáculos para que o "passarinho" continue voando.
 
 ## Introdução
-Construímos este jogo inspirado no [Flappy Bird](https://pt.wikipedia.org/wiki/Flappy_Bird). 
+[Construímos este jogo](https://youtu.be/AWvPZyU2w_M?t=1m17s) inspirado no [Flappy Bird](https://pt.wikipedia.org/wiki/Flappy_Bird). 
 Para facilitar o entendimento da lógica de funcionamento do jogo, criamos blocos específicos para o seu controle. 
 
+## ~avatar
+
+Qualquer dúvida na construção, use o **link (texto azul)** para abrir o vídeo que apresenta como realizar aquele passo. Para acessar o vídeo com o tutorial completo, use [**este link**](https://youtu.be/AWvPZyU2w_M).
+
+## ~
+
 ## Como jogar
-1. Baixe o jogo no seu computador.
-1. Conecte o Micro:bit e transfira o jogo.
-1. Para controlar o jogo estão disponíveis os seguintes comandos:
+1. [Baixe](https://youtu.be/AWvPZyU2w_M?t=1m55s) o jogo no seu computador.
+1. [Conecte](https://youtu.be/AWvPZyU2w_M?t=2m39s) o Micro:bit e [transfira o jogo](https://youtu.be/AWvPZyU2w_M?t=3m05s).
+1. [Para controlar o jogo](https://youtu.be/AWvPZyU2w_M?t=4m31s) estão disponíveis os seguintes comandos:
   1. **Botão A**: subir passarinho.<br />
   1. **Botão B**: descer passarinho.<br />
   1. **Botões A+B**: reiniciar o jogo.
 
 ## Sugestões de modificação
-Quer experimentar modificar a programação deste jogo? Então, confira as sugestões apresentadas abaixo.
+[Quer experimentar modificar](https://youtu.be/AWvPZyU2w_M?t=6m20s) a programação deste jogo? Então, confira as sugestões apresentadas abaixo.
 
 ### Alterando a velocidade do jogo
 A velocidade de movimentação do obstáculo é definida pelo valor da variável ``||variables:valorDaPausa||`` que você encontra dentro do bloco ``||basic:no iniciar||`` 
