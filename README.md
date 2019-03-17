@@ -66,7 +66,7 @@ Confira como isso ficou no código abaixo.
 
 ![Imagem com o programa na forma de blocos](https://raw.githubusercontent.com/CRIATIVIDADEdigital/pxt-voando/master/img/velocidade_automatico.png)
 
-Após a alteração veja como ficou o jogo usando o simulador ou [baixando a nova versão](https://youtu.be/AWvPZyU2w_M?t=12m19s) do código no seu Micro:bit. [Com a modificação](https://youtu.be/AWvPZyU2w_M?t=14m57s) da variável ``||variable:alterar valorDaPausa por -10||`` a cada obstáculo, o jogo vai ficando mais difícil, exigindo maior habilidade do jogador.
+Após a alteração veja como ficou o jogo usando o simulador ou [baixando a nova versão](https://youtu.be/AWvPZyU2w_M?t=12m19s) do código no seu Micro:bit. [Com a modificação](https://youtu.be/AWvPZyU2w_M?t=14m26s) da variável ``||variable:alterar valorDaPausa por -10||`` a cada obstáculo, o jogo vai ficando mais difícil, exigindo maior habilidade do jogador.
 
 ## Créditos
 Esta atividade foi criada pelo [APRENDER.digital](https://aprender.digital) usando como base o código do [Crashy Bird](https://makecode.microbit.org/projects/crashy-bird).
