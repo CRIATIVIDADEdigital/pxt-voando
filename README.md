@@ -23,7 +23,7 @@ Qualquer dúvida na construção, use o **link (texto azul)** para abrir o víde
 [Quer experimentar modificar](https://youtu.be/AWvPZyU2w_M?t=6m20s) a programação deste jogo? Então, confira as sugestões apresentadas abaixo.
 
 ### Alterando a velocidade do jogo
-[A velocidade de movimentação do obstáculo](https://youtu.be/AWvPZyU2w_M?t=6m34s) é definida pelo valor da variável ``||variables:valorDaPausa||`` que você encontra dentro do bloco ``||basic:no iniciar||`` 
+[A velocidade de movimentação do obstáculo](https://youtu.be/AWvPZyU2w_M?t=6m34s) é definida pelo valor da variável ```||variables:valorDaPausa||``` que você encontra dentro do bloco ```||basic:no iniciar||``` 
 
 ```blocks
 let valorDaPausa = 1000
@@ -31,7 +31,7 @@ let valorDaPausa = 1000
 
 [O valor está representado](https://youtu.be/AWvPZyU2w_M?t=6m53s) em milissegundos, ou seja, ``||variables:1000||`` corresponde a 1 segundo. 
 Caso você queira acelerar a velocidade dos obstáculos, basta reduzir o valor. 
-Por exemplo, altere o valor para ``||variables:500||``.
+Por exemplo, altere o valor para ```||variables:500||```.
 
 ```blocks
 let valorDaPausa = 500
@@ -66,7 +66,7 @@ Confira como isso ficou no código abaixo.
 
 ![Imagem com o programa na forma de blocos](https://raw.githubusercontent.com/CRIATIVIDADEdigital/pxt-voando/master/img/velocidade_automatico.png)
 
-Após a alteração veja como ficou o jogo usando o simulador ou [baixando a nova versão](https://youtu.be/AWvPZyU2w_M?t=12m19s) do código no seu Micro:bit.
+Após a alteração veja como ficou o jogo usando o simulador ou [baixando a nova versão](https://youtu.be/AWvPZyU2w_M?t=12m19s) do código no seu Micro:bit. Com a modificação da variável ``||variable:alterar valorDaPausa por -10||`` a cada obstáculo, o jogo vai ficando mais difícil, exigindo maior habilidade do jogador.
 
 ## Créditos
 Esta atividade foi criado pelo [APRENDER.digital](https://aprender.digital) usando como base o código do [Crashy Bird](https://makecode.microbit.org/projects/crashy-bird).
