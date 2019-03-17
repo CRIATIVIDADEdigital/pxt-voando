@@ -23,22 +23,22 @@ Qualquer dúvida na construção, use o **link (texto azul)** para abrir o víde
 [Quer experimentar modificar](https://youtu.be/AWvPZyU2w_M?t=6m20s) a programação deste jogo? Então, confira as sugestões apresentadas abaixo.
 
 ### Alterando a velocidade do jogo
-A velocidade de movimentação do obstáculo é definida pelo valor da variável ``||variables:valorDaPausa||`` que você encontra dentro do bloco ``||basic:no iniciar||`` 
+[A velocidade de movimentação do obstáculo](https://youtu.be/AWvPZyU2w_M?t=6m34s) é definida pelo valor da variável ``||variables:valorDaPausa||`` que você encontra dentro do bloco ``||basic:no iniciar||`` 
 
 ```blocks
 let valorDaPausa = 1000
 ```
 
-O valor está representado em milissegundos, ou seja, ``||variables:1000||`` corresponde a 1 segundo. 
+[O valor está representado](https://youtu.be/AWvPZyU2w_M?t=6m53s) em milissegundos, ou seja, ``||variables:1000||`` corresponde a 1 segundo. 
 Caso você queira acelerar a velocidade dos obstáculos, basta reduzir o valor. 
 Por exemplo, altere o valor para ``||variables:500||``.
 
 ```blocks
 let valorDaPausa = 500
 ```
-Após a alteração veja como ficou o jogo usando o simulador ou baixando a nova versão do código no seu Micro:bit.
+Após a alteração veja como ficou o jogo [usando o simulador](https://youtu.be/AWvPZyU2w_M?t=8m12s) ou baixando a nova versão do código no seu Micro:bit.
 
-Portanto, aumentando o valor da variável ``||variable:valorDaPausa||`` nós **reduzimos** a velocidade do jogo. 
+[Observe como os blocos estão organizados](https://youtu.be/AWvPZyU2w_M?t=9m35s) para o funcionamento do jogo. Perceba que, ao aumentar o valor da variável ``||variable:valorDaPausa||`` nós **reduzimos** a velocidade do jogo. 
 Diminuindo o valor da variável ``||variable:valorDaPausa||`` nós **aumentamos** a velocidade do jogo. 
 Isso acontece porque esta a variável define o tempo de ``||basic.pausa||`` que o programa utiliza como base para movimentar os obstáculos.
 
