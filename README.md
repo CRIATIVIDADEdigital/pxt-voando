@@ -63,6 +63,7 @@ Sugerimos que você experimente subtrair 10 milissegundos a cada pausa.
 [A alteração consiste](https://youtu.be/AWvPZyU2w_M?t=11m30s) em mudar de ``||variable:alterar valorDaPausa por 0||`` para ``||variable:alterar valorDaPausa por -10||``.
 
 Confira como isso ficou no código abaixo.
+
 ![Imagem com o programa na forma de blocos](https://raw.githubusercontent.com/CRIATIVIDADEdigital/pxt-voando/master/img/velocidade_automatico.png)
 
 Após a alteração veja como ficou o jogo usando o simulador ou [baixando a nova versão](https://youtu.be/AWvPZyU2w_M?t=12m19s) do código no seu Micro:bit.
